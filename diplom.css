@@ -158,9 +158,9 @@ body {
     background: rgb(224, 224, 224);
   }
 
-  .products {
+  /* .products {
     margin-top: 40px
-  }
+  } */
 
   .menu__button {
     position: relative;
@@ -291,9 +291,9 @@ body {
     width: 270px;
   }
 
-  .products {
+  /* .products {
     margin-top: 40px
-  }
+  } */
 
   .product {
     width: calc(32% - 32px);
@@ -634,7 +634,7 @@ body {
 /* ===== Тренды ===== */
 
 .top {
-  margin-top: 45px;
+  /* margin-top: 45px; */
   margin-bottom: 15px;
   background-color: #ffffff;
   text-align: center;
@@ -662,6 +662,12 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+.trends-top {
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 .trend {
@@ -874,7 +880,7 @@ a {
 /*=====ASIDE=====*/
 
 .aside-item:not(:first-child) {
-  margin-top: 15px;
+  margin-top: 60px;
 }
 
 .new {
@@ -1220,7 +1226,6 @@ a {
 /* ======PRODUCTION======= */
 
 .top__headers {
-  margin-top: 40px;
   margin-bottom: 10px;
 }
 
