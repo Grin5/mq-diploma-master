@@ -634,8 +634,6 @@ body {
 /* ===== Тренды ===== */
 
 .top {
-  /* margin-top: 45px; */
-  margin-bottom: 15px;
   background-color: #ffffff;
   text-align: center;
   font-size: 14px;
@@ -885,7 +883,6 @@ a {
 
 .new {
   display: flex;
-  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -1227,6 +1224,10 @@ a {
 
 .top__headers {
   margin-bottom: 10px;
+}
+
+.products {
+  margin-top: 60px;
 }
 
 .product__list {
