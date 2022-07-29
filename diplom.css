@@ -634,7 +634,7 @@ body {
 /* ===== Тренды ===== */
 
 .top {
-  margin-top: 45px;
+  /* margin-top: 45px; */
   margin-bottom: 15px;
   background-color: #ffffff;
   text-align: center;
