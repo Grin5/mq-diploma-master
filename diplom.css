@@ -7,19 +7,19 @@
 }
 @font-face {
   font-family: open-sans-r;
-  src: url(sources/fonts/OpenSans-Regular.woff);
+  src: url("./sources/fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: open-sans-b;
-  src: url(source/fonts/OpenSans-Bold.woff);
-  font-weight: 400;
+  src: url("./sources/fonts/OpenSans-Bold.woff");
+  font-weight: 600;
   font-style: normal;
 }
 
 body {
-  font-family: open-sans-r, sans-serif;
+  font-family: open-sans, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
@@ -93,21 +93,10 @@ body {
 
   .product__img {
     width: 100%;
-    height: 250px;
 
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
-  }
-
-  .product:nth-child(n + 1) .product__img {
-    background-image: url(sources/img/shop-item-desk1.jpg);
-  }
-  .product:nth-child(n + 2) .product__img {
-    background-image: url(sources/img/shop-item-desk2.jpg);
-  }
-  .product:nth-child(n + 3) .product__img {
-    background-image: url(sources/img/shop-item-desk3.jpg);
   }
 }
 
@@ -181,7 +170,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: open-sans-b, sans-serif;
+    font-family: open-sans-r, sans-serif;
     font-size: 45px;
     line-height: 1.6;
     text-transform: uppercase;
@@ -215,20 +204,11 @@ body {
     margin-left: 32px;
   }
   .product__img {
-    height: 180px;
+    /* height: 180px; */
 
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
-  }
-  .product:nth-child(n + 1) .product__img {
-    background-image: url(sources/img/shop-item-desk1.jpg);
-  }
-  .product:nth-child(n + 2) .product__img {
-    background-image: url(sources/img/shop-item-desk2.jpg);
-  }
-  .product:nth-child(n + 3) .product__img {
-    background-image: url(sources/img/shop-item-desk3.jpg);
   }
 }
 
@@ -289,7 +269,7 @@ body {
   }
 
   .welcome-title {
-    font-family: open-sans-b, sans-serif;
+    font-family: open-sans-r, sans-serif;
     font-size: 2.6rem;
     line-height: 1.6;
     max-width: 700px;
@@ -303,12 +283,12 @@ body {
   }
 
   .main {
-    width: 60%;
+    width: calc(100% - 400px);
     padding-right: 15px;
   }
 
   .aside {
-    width: 40%;
+    width: 270px;
   }
 
   .products {
@@ -322,18 +302,9 @@ body {
   }
   .product__img {
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
 
     padding-bottom: 15px;
-  }
-  .product:nth-child(n + 1) .product__img {
-    background-image: url(sources/img/shop-item-desk1.jpg);
-  }
-  .product:nth-child(n + 2) .product__img {
-    background-image: url(sources/img/shop-item-desk2.jpg);
-  }
-  .product:nth-child(n + 3) .product__img {
-    background-image: url(sources/img/shop-item-desk3.jpg);
   }
 
   .product:nth-child(3n + 2) {
@@ -408,11 +379,12 @@ body {
   left: 0;
   display: none;
   /* display: flex; */
+
+  z-index: 100;
 }
 
 .popup__container {
-  max-width: 320px;
-  max-height: 640px;
+  max-width: 390px;
   width: 95%;
   margin: auto;
   font-size: 0.8rem;
@@ -428,7 +400,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  padding-top: 20px;
+  padding-top: 54px;
   padding-bottom: 0;
 
   font-weight: bold;
@@ -447,13 +419,13 @@ body {
 }
 
 .sign-up__content {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 54px;
 }
 
 .feedback {
-  border: 1px solid #cbd1d4;
+  border: none;
   background-color: #f4f7f6;
   padding: 10px;
   width: 100%;
@@ -478,12 +450,12 @@ body {
   height: 38px;
 
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 
   padding-left: 10px;
   padding-right: 25px;
 
-  border: 1px solid #cbd1d4;
+  border: none;
   background-color: #f4f7f6;
 
   font-size: 14px;
@@ -501,7 +473,7 @@ body {
 
 .radio__group {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
 }
 .form_radio {
   margin-bottom: 10px;
@@ -548,16 +520,17 @@ body {
 }
 
 .sign-up__row {
-  padding-top: 10px;
+  padding-top: 28px;
 }
 
 .sign-up__button {
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #b59f5b;
   border: 2px solid currentColor;
   cursor: pointer;
-  padding: 15px 75px;
+  padding: 15px;
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
@@ -661,6 +634,7 @@ body {
 /* ===== Тренды ===== */
 
 .top {
+  margin-top: 45px;
   margin-bottom: 15px;
   background-color: #ffffff;
   text-align: center;
@@ -1268,6 +1242,10 @@ a {
 
   font-size: 14px;
   margin-top: 20px;
+
+  display: flex;
+  align-self: normal;
+  flex-direction: column;
 }
 
 /* .product__imgbox {
@@ -1293,9 +1271,11 @@ background-size: cover;
   margin: -32px -16px 0;
   z-index: 10;
 
-  height: 220px;
-
   padding: 36px 14px;
+
+  position: relative;
+
+  flex-grow: 1;
 }
 
 .product__title {
@@ -1307,7 +1287,6 @@ background-size: cover;
 }
 
 .product__footer {
-  border-top: 1px solid #f0f0f0;
   padding-top: 20px;
   display: flex;
   align-items: flex-end;
