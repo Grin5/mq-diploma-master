@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: open-sans, sans-serif;
+  font-family: open-sans-r, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
@@ -528,11 +528,11 @@ body {
   display: flex;
   justify-content: center;
   background-color: #b59f5b;
-  border: 2px solid currentColor;
+  border: none;
   cursor: pointer;
   padding: 15px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
   font-family: inherit;
   font-size: 14px;
